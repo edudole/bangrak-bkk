@@ -17,17 +17,29 @@
       STUDENT_PROFILE_EXEC_URL: 'https://script.google.com/macros/s/AKfycbytWX0psf7c4a88mgfeDnnOy13x4KcPSpS32G66NTm32igiHb2y-c0QqzkrgWpf4l0J/exec',
       CACHE_PREFIX: 'LP360:TAMBOL:SILOM:'
     }),
-    tambon2: Object.freeze({
+    mahaphruettharam: Object.freeze({
       SITE_TYPE: 'TAMBOL',
-      MAIN_EXEC_URL: '',
-      STUDENT_PROFILE_EXEC_URL: '',
-      CACHE_PREFIX: 'LP360:TAMBOL:TAMBON2:'
+      MAIN_EXEC_URL: 'https://script.google.com/macros/s/AKfycbyXrG7HZVrpflXKo-rr4jf2Ez79NqWpSEgh6bBD0OXSrk5oX9_SWl4CatDBFX5gS8c-RA/exec',
+      STUDENT_PROFILE_EXEC_URL: 'https://script.google.com/macros/s/AKfycbzdAKhonGUj6_kCjxqaFC-C-ZpDWx1BDNLYB5Rr_PdnNgeNYshkUTu9dL7LP24Uu1PQlg/exec',
+      CACHE_PREFIX: 'LP360:TAMBOL:MAHAPHRUETTHARAM:'
     }),
-    tambon3: Object.freeze({
+    suriyawong: Object.freeze({
       SITE_TYPE: 'TAMBOL',
-      MAIN_EXEC_URL: '',
-      STUDENT_PROFILE_EXEC_URL: '',
-      CACHE_PREFIX: 'LP360:TAMBOL:TAMBON3:'
+      MAIN_EXEC_URL: 'https://script.google.com/macros/s/AKfycbx3crJbF9_X-uCceAGffUWWbzRUYY8XMidD606YEIPbF_IzDtqbmy2cD-qa2JCGRBP3/exec',
+      STUDENT_PROFILE_EXEC_URL: 'https://script.google.com/macros/s/AKfycbwVcmoq6s7FIyjn8KRSoWbcsU936-HgTHGJAMeoP87y2amc__RGHbNPWyUUIwYhDtEH7A/exec',
+      CACHE_PREFIX: 'LP360:TAMBOL:SURIYAWONG:'
+    }),
+     siphraya: Object.freeze({
+      SITE_TYPE: 'TAMBOL',
+      MAIN_EXEC_URL: 'https://script.google.com/macros/s/AKfycby4zrYBs2oTyzy_NdWxRimVFTEJUdvb6_TclonS4MlFLlVqmOdaYFucnVnXV3FaFPQs_A/exec',
+      STUDENT_PROFILE_EXEC_URL: 'https://script.google.com/macros/s/AKfycbwW-IiQe1mZNtGZYSAk1Je21U6G1oV8VDwkRpBHhLQFjSksD2jjulQ5WPP7gy2_OCBXgg/exec',
+      CACHE_PREFIX: 'LP360:TAMBOL:SIPHRAYA:'
+    }),
+      bang-rak: Object.freeze({
+      SITE_TYPE: 'TAMBOL',
+      MAIN_EXEC_URL: 'https://script.google.com/macros/s/AKfycbwuKYgVZRYIbujm1hHv4lQchRIPaKN-X300y7jOHgcNyvK_60-CFOzadomro0e4HVS59A/exec',
+      STUDENT_PROFILE_EXEC_URL: 'https://script.google.com/macros/s/AKfycbytWX0psf7c4a88mgfeDnnOy13x4KcPSpS32G66NTm32igiHb2y-c0QqzkrgWpf4l0J/exec',
+      CACHE_PREFIX: 'LP360:TAMBOL:BANG-RAK:'
     }),
     library: Object.freeze({
       SITE_TYPE: 'LIBRARY',
