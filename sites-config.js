@@ -8,13 +8,13 @@
     district: Object.freeze({
       SITE_TYPE: 'DISTRICT',
       MAIN_EXEC_URL: 'https://script.google.com/macros/s/AKfycbzGOcbm-5oerlRH5T0z_HPn-wddQVySLeUqL29zObB8LcHmFTW7L101G3zxX_ucfX-y/exec',
-      STUDENT_PROFILE_EXEC_URL: 'https://script.google.com/macros/s/AKfycbzKjAvy0NQXPI0vG-BkeAu1tmYEaooUHabIQUfwZ2Hn00prrOfCtLWHz6QewWA6qVPqgw/exec',
+      STUDENT_PROFILE_EXEC_URL: 'https://script.google.com/macros/s/AKfycbxbrG5aYd2c0Fzz7aZ0qjqY3I1lDgnw4Wm2DUWo_oRzlfXP453wHSXgdv8Y3K5ZgMic/exec',
       CACHE_PREFIX: 'LP360:DISTRICT:ROOT:'
     }),
     silom: Object.freeze({
       SITE_TYPE: 'TAMBOL',
-      MAIN_EXEC_URL: 'https://script.google.com/macros/s/AKfycbwuKYgVZRYIbujm1hHv4lQchRIPaKN-X300y7jOHgcNyvK_60-CFOzadomro0e4HVS59A/exec',
-      STUDENT_PROFILE_EXEC_URL: 'https://script.google.com/macros/s/AKfycbytWX0psf7c4a88mgfeDnnOy13x4KcPSpS32G66NTm32igiHb2y-c0QqzkrgWpf4l0J/exec',
+      MAIN_EXEC_URL: 'https://script.google.com/macros/s/AKfycbzdxC1rPWTuehzRtKKgzKOhiwFLYz5i6-e4Ak9wsDnRd3lMtNnI2KqKS90PdOPUPsVH/exec',
+      STUDENT_PROFILE_EXEC_URL: 'https://script.google.com/macros/s/AKfycbzdxC1rPWTuehzRtKKgzKOhiwFLYz5i6-e4Ak9wsDnRd3lMtNnI2KqKS90PdOPUPsVH/exec',
       CACHE_PREFIX: 'LP360:TAMBOL:SILOM:'
     }),
     mahaphruettharam: Object.freeze({
@@ -35,11 +35,11 @@
       STUDENT_PROFILE_EXEC_URL: 'https://script.google.com/macros/s/AKfycbwW-IiQe1mZNtGZYSAk1Je21U6G1oV8VDwkRpBHhLQFjSksD2jjulQ5WPP7gy2_OCBXgg/exec',
       CACHE_PREFIX: 'LP360:TAMBOL:SIPHRAYA:'
     }),
-      tambon5: Object.freeze({
+      bang-rak: Object.freeze({
       SITE_TYPE: 'TAMBOL',
       MAIN_EXEC_URL: 'https://script.google.com/macros/s/AKfycbwuKYgVZRYIbujm1hHv4lQchRIPaKN-X300y7jOHgcNyvK_60-CFOzadomro0e4HVS59A/exec',
       STUDENT_PROFILE_EXEC_URL: 'https://script.google.com/macros/s/AKfycbytWX0psf7c4a88mgfeDnnOy13x4KcPSpS32G66NTm32igiHb2y-c0QqzkrgWpf4l0J/exec',
-      CACHE_PREFIX: 'LP360:TAMBOL:TAMBON5:'
+      CACHE_PREFIX: 'LP360:TAMBOL:BANGRAK:'
     }),
     library: Object.freeze({
       SITE_TYPE: 'LIBRARY',
