@@ -19,26 +19,26 @@
     }),
     mahaphruettharam: Object.freeze({
       SITE_TYPE: 'TAMBOL',
-      MAIN_EXEC_URL: 'https://script.google.com/macros/s/AKfycbyXrG7HZVrpflXKo-rr4jf2Ez79NqWpSEgh6bBD0OXSrk5oX9_SWl4CatDBFX5gS8c-RA/exec',
-      STUDENT_PROFILE_EXEC_URL: 'https://script.google.com/macros/s/AKfycbzdAKhonGUj6_kCjxqaFC-C-ZpDWx1BDNLYB5Rr_PdnNgeNYshkUTu9dL7LP24Uu1PQlg/exec',
+      MAIN_EXEC_URL: '',
+      STUDENT_PROFILE_EXEC_URL: '',
       CACHE_PREFIX: 'LP360:TAMBOL:TAMBON2:'
-    }),
-    silom: Object.freeze({
-      SITE_TYPE: 'TAMBOL',
-      MAIN_EXEC_URL: 'https://script.google.com/macros/s/AKfycbzdxC1rPWTuehzRtKKgzKOhiwFLYz5i6-e4Ak9wsDnRd3lMtNnI2KqKS90PdOPUPsVH/exec',
-      STUDENT_PROFILE_EXEC_URL: 'https://script.google.com/macros/s/AKfycbxbrG5aYd2c0Fzz7aZ0qjqY3I1lDgnw4Wm2DUWo_oRzlfXP453wHSXgdv8Y3K5ZgMic/exec',
-      CACHE_PREFIX: 'LP360:TAMBOL:TAMBON3:'
-    }),
-    siphraya: Object.freeze({
-      SITE_TYPE: 'TAMBOL',
-      MAIN_EXEC_URL: 'https://script.google.com/macros/s/AKfycby4zrYBs2oTyzy_NdWxRimVFTEJUdvb6_TclonS4MlFLlVqmOdaYFucnVnXV3FaFPQs_A/exec',
-      STUDENT_PROFILE_EXEC_URL: 'https://script.google.com/macros/s/AKfycbwW-IiQe1mZNtGZYSAk1Je21U6G1oV8VDwkRpBHhLQFjSksD2jjulQ5WPP7gy2_OCBXgg/exec',
-      CACHE_PREFIX: 'LP360:TAMBOL:TAMBON4:'
     }),
     suriyawong: Object.freeze({
       SITE_TYPE: 'TAMBOL',
-      MAIN_EXEC_URL: 'https://script.google.com/macros/s/AKfycbx3crJbF9_X-uCceAGffUWWbzRUYY8XMidD606YEIPbF_IzDtqbmy2cD-qa2JCGRBP3/exec',
-      STUDENT_PROFILE_EXEC_URL: 'https://script.google.com/macros/s/AKfycbwVcmoq6s7FIyjn8KRSoWbcsU936-HgTHGJAMeoP87y2amc__RGHbNPWyUUIwYhDtEH7A/exec',
+      MAIN_EXEC_URL: '',
+      STUDENT_PROFILE_EXEC_URL: '',
+      CACHE_PREFIX: 'LP360:TAMBOL:TAMBON3:'
+    }),
+    silom: Object.freeze({
+      SITE_TYPE: 'TAMBOL',
+      MAIN_EXEC_URL: '',
+      STUDENT_PROFILE_EXEC_URL: '',
+      CACHE_PREFIX: 'LP360:TAMBOL:TAMBON4:'
+    }),
+    siphraya: Object.freeze({
+      SITE_TYPE: 'TAMBOL',
+      MAIN_EXEC_URL: '',
+      STUDENT_PROFILE_EXEC_URL: '',
       CACHE_PREFIX: 'LP360:TAMBOL:TAMBON5:'
     }),
     library: Object.freeze({
