@@ -11,35 +11,23 @@
       STUDENT_PROFILE_EXEC_URL: 'https://script.google.com/macros/s/AKfycbzKjAvy0NQXPI0vG-BkeAu1tmYEaooUHabIQUfwZ2Hn00prrOfCtLWHz6QewWA6qVPqgw/exec',
       CACHE_PREFIX: 'LP360:DISTRICT:ROOT:'
     }),
-    bang-rak: Object.freeze({
+    tambon1: Object.freeze({
       SITE_TYPE: 'TAMBOL',
       MAIN_EXEC_URL: 'https://script.google.com/macros/s/AKfycbwuKYgVZRYIbujm1hHv4lQchRIPaKN-X300y7jOHgcNyvK_60-CFOzadomro0e4HVS59A/exec',
       STUDENT_PROFILE_EXEC_URL: 'https://script.google.com/macros/s/AKfycbytWX0psf7c4a88mgfeDnnOy13x4KcPSpS32G66NTm32igiHb2y-c0QqzkrgWpf4l0J/exec',
       CACHE_PREFIX: 'LP360:TAMBOL:TAMBON1:'
     }),
-    mahaphruettharam: Object.freeze({
+    tambon2: Object.freeze({
       SITE_TYPE: 'TAMBOL',
       MAIN_EXEC_URL: '',
       STUDENT_PROFILE_EXEC_URL: '',
       CACHE_PREFIX: 'LP360:TAMBOL:TAMBON2:'
     }),
-    suriyawong: Object.freeze({
+    tambon3: Object.freeze({
       SITE_TYPE: 'TAMBOL',
       MAIN_EXEC_URL: '',
       STUDENT_PROFILE_EXEC_URL: '',
       CACHE_PREFIX: 'LP360:TAMBOL:TAMBON3:'
-    }),
-    silom: Object.freeze({
-      SITE_TYPE: 'TAMBOL',
-      MAIN_EXEC_URL: '',
-      STUDENT_PROFILE_EXEC_URL: '',
-      CACHE_PREFIX: 'LP360:TAMBOL:TAMBON4:'
-    }),
-    siphraya: Object.freeze({
-      SITE_TYPE: 'TAMBOL',
-      MAIN_EXEC_URL: '',
-      STUDENT_PROFILE_EXEC_URL: '',
-      CACHE_PREFIX: 'LP360:TAMBOL:TAMBON5:'
     }),
     library: Object.freeze({
       SITE_TYPE: 'LIBRARY',
