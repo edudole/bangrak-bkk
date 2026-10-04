@@ -34,13 +34,18 @@ const USER_PAGES = Object.freeze({
     EXEC_URL: 'https://script.google.com/macros/s/AKfycbytWX0psf7c4a88mgfeDnnOy13x4KcPSpS32G66NTm32igiHb2y-c0QqzkrgWpf4l0J/exec',
     SEO_TITLE: 'ศกร.ระดับระดับแขวงบางรัก',
     SEO_DESCRIPTION: 'เรียนรู้ทุกที่ ทุกเวลา ทุกช่วงวัย'
+  }),
+   'admin': Object.freeze({
+    EXEC_URL: 'https://script.google.com/macros/s/AKfycbzKjAvy0NQXPI0vG-BkeAu1tmYEaooUHabIQUfwZ2Hn00prrOfCtLWHz6QewWA6qVPqgw/exec',
+    SEO_TITLE: 'สกร.ระดับระดับเขตบางรัก',
+    SEO_DESCRIPTION: 'เรียนรู้ทุกที่ ทุกเวลา ทุกช่วงวัย'
   })
 });
 
   const SITES = Object.freeze({
     district: Object.freeze({
       SITE_TYPE: 'DISTRICT',
-      SEO_TITLE: "ศกร.ระดับเขตบางรัก",
+      SEO_TITLE: "สกร.ระดับเขตบางรัก",
       SEO_DESCRIPTION: "เรียนได้ทุกที่ ทุกเวลา ทุกช่วงวัย",
       MAIN_EXEC_URL: 'https://script.google.com/macros/s/AKfycbzGOcbm-5oerlRH5T0z_HPn-wddQVySLeUqL29zObB8LcHmFTW7L101G3zxX_ucfX-y/exec',
       STUDENT_PROFILE_EXEC_URL: 'https://script.google.com/macros/s/AKfycbxbrG5aYd2c0Fzz7aZ0qjqY3I1lDgnw4Wm2DUWo_oRzlfXP453wHSXgdv8Y3K5ZgMic/exec',
