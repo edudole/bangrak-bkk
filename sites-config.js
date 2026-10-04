@@ -5,7 +5,7 @@
 (() => {
   'use strict';
   // ===== Global shared icon =====
-  const GLOBAL_ICON_URL = 'https://static.wixstatic.com/media/a503e5_b1f34c9cb73e40a0b027042bb3f6c959~mv2.png';
+  const GLOBAL_ICON_URL = 'https://static.wixstatic.com/media/a503e5_5ae78aea1fb84b229232218de4efd668~mv2.png';
 
   // ===== User iframe pages =====
 
