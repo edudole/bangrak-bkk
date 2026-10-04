@@ -11,7 +11,7 @@
   // - deduplicate requests
   // - limit parallel Apps Script reads to avoid cold-start congestion
   // - retry transient read failures until the connection succeeds
-  const HOMEFAST_CACHE_KEY = 'homefast-v14-settingmenus-all-20260922';
+  const HOMEFAST_CACHE_KEY = 'homefast-v15-seo-t3t4-20261004';
   const HOMEFAST_TTL = 5 * 60 * 1000;
   const HOMEFAST_STALE_TTL = 24 * 60 * 60 * 1000;
   const NETWORK_TIMEOUT = 45 * 1000;
@@ -65,6 +65,7 @@
   function optimizeHomeFastPayload(payload) {
     const root = payload && payload.data && typeof payload.data === 'object' ? payload.data : payload;
     if (!root || typeof root !== 'object') return payload;
+
 
     if (root.images) {
       root.images.brandIcon = fastImageUrl(root.images.brandIcon, 320);
@@ -586,7 +587,7 @@ async function loadWebsiteImages() {
           name.textContent = brandName;
         });
 
-      document.title = brandName;
+      if (!window.__LP360_SEO_TITLE) document.title = brandName;
     }
 
 if (heroOverlayUrl) {

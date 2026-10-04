@@ -11,7 +11,7 @@
   // - deduplicate requests
   // - limit parallel Apps Script reads to avoid cold-start congestion
   // - retry transient read failures until the connection succeeds
-  const HOMEFAST_CACHE_KEY = 'homefast-v13-first-image-20260917';
+  const HOMEFAST_CACHE_KEY = 'homefast-v15-seo-t3t4-20261004';
   const HOMEFAST_TTL = 5 * 60 * 1000;
   const HOMEFAST_STALE_TTL = 24 * 60 * 60 * 1000;
   const NETWORK_TIMEOUT = 45 * 1000;
@@ -65,6 +65,7 @@
   function optimizeHomeFastPayload(payload) {
     const root = payload && payload.data && typeof payload.data === 'object' ? payload.data : payload;
     if (!root || typeof root !== 'object') return payload;
+
 
     if (root.images) {
       root.images.brandIcon = fastImageUrl(root.images.brandIcon, 320);
@@ -586,7 +587,7 @@ async function loadWebsiteImages() {
           name.textContent = brandName;
         });
 
-      document.title = brandName;
+      if (!window.__LP360_SEO_TITLE) document.title = brandName;
     }
 
 if (heroOverlayUrl) {
@@ -859,7 +860,7 @@ function renderSettingMenus(items) {
     };
   }
 
-  async function loadNews() {
+  async function loadNews(forceFresh = false) {
     const slider = document.getElementById('newsSlider');
     const slidesBox = document.getElementById('newsSlides');
     if (!slider || !slidesBox) return;
@@ -867,7 +868,14 @@ function renderSettingMenus(items) {
     try {
       let result;
 
-      if (window.SiteFast) {
+      // หลังผู้ดูแลสลับแหล่งข่าว ต้องอ่าน ?mode=news สดโดยตรง
+      // เพื่อไม่ให้ homefast/prefetch ชุดที่โหลดก่อนหน้าเอาข่าวเก่ากลับมาแสดง
+      if (forceFresh) {
+        const freshUrl = NEWS_API_URL + (NEWS_API_URL.includes('?') ? '&' : '?') + '_=' + Date.now();
+        const response = await fetch(freshUrl, { cache: 'no-store', credentials: 'omit' });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        result = await response.json();
+      } else if (window.SiteFast) {
         result = Object.assign({ success: true }, await window.SiteFast.homePart('news'));
       } else {
         const response = await fetch(NEWS_API_URL, { cache: 'default' });
@@ -1098,7 +1106,8 @@ async function openNewsPopup(item) {
   });
   document.addEventListener('news-admin-updated', () => {
     window.SiteFast?.clear('homefast');
-    loadNews();
+    // รีเฟรชข่าวสดทันทีหลังสลับ user/admin โดยข้าม homefast prefetch เดิม
+    loadNews(true);
   });
 })();
 
@@ -1411,8 +1420,8 @@ async function openNewsPopup(item) {
 (() => {
   'use strict';
   const API_URL=window.APP_CONFIG.API_URL;
-  const CSS_FILES=['edit-website.css?v=20260827-2','news-manager.css?v=20260902-newsurl-optional-2','newsletter-manager.css?v=20260826-1','newsletter-overlay.css?v=20260826-3','facebook-manager.css?v=20260826-1','admin-subpage.css?v=20260901-index-team-1','team-manager.css?v=20260901-index-team-1'];
-  const JS_FILES=['edit-website.js?v=20260827-2','news-manager.js?v=20260922-action-icons-1','newsletter-manager.js?v=20260922-action-icons-1','facebook-manager.js?v=20260922-action-icons-1','team-manager.js?v=20260922-action-icons-1'];
+  const CSS_FILES=['edit-website.css?v=20260827-2','news-manager.css?v=20261004-admin-source-2','newsletter-manager.css?v=20260826-1','newsletter-overlay.css?v=20260826-3','facebook-manager.css?v=20260826-1','admin-subpage.css?v=20260901-index-team-1','team-manager.css?v=20260901-index-team-1'];
+  const JS_FILES=['edit-website.js?v=20260827-2','news-manager.js?v=20261004-admin-source-2','newsletter-manager.js?v=20260922-action-icons-1','facebook-manager.js?v=20260922-action-icons-1','team-manager.js?v=20260922-action-icons-1'];
   let toolsPromise=null;
   let storagePromise=null;
   const STORAGE_CACHE_KEY='LP360:TAMBOL:BANG_RAK:mysiteAdminStorageV2D15';
